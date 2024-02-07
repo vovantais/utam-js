@@ -1,0 +1,40 @@
+{
+  "shadow": {
+    "elements": [
+      {
+        "name": "lightningCard",
+        "selector": {
+          "css": "lightning-card"
+        },
+        "type": "salesforce-pageobjects/lightning/pageObjects/card"
+      },
+      {
+        "name": "content",
+        "selector": {
+          "css": ".content span"
+        }
+      }
+    ]
+  },
+  "methods": [
+    {
+      "name": "getText",
+      "compose": [
+        {
+          "element": "lightningCard",
+          "apply": "getBodyText",
+          "returnType": "string"
+        }
+      ]
+    },
+    {
+      "name": "getContent",
+      "compose": [
+        {
+          "element": "content",
+          "apply": "getText"
+        }
+      ]
+    }
+  ]
+}
