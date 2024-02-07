@@ -33,7 +33,7 @@
         "isbinaryfile": "^5.0.0",
         "lint-staged": "11.2.6",
         "prettier": "2.3.2",
-        "rimraf": "^3.0.2",
+        "rimraf": "^5.0.5",
         "salesforce-pageobjects": "^2.0.1",
         "wdio-chromedriver-service": "^6.0.4",
         "wdio-utam-service": "^1.1.0"
